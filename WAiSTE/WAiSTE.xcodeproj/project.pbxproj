@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A427B2F82A5A574100B75BBC /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427B2F72A5A574100B75BBC /* LiveViewController.swift */; };
+		A427B2FA2A5A5F1200B75BBC /* IdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427B2F92A5A5F1200B75BBC /* IdentifierViewController.swift */; };
 		A4A6ABD42A5914DE00764AB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A6ABD32A5914DE00764AB5 /* AppDelegate.swift */; };
 		A4A6ABD62A5914DE00764AB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A6ABD52A5914DE00764AB5 /* SceneDelegate.swift */; };
-		A4A6ABD82A5914DE00764AB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A6ABD72A5914DE00764AB5 /* ViewController.swift */; };
 		A4A6ABDB2A5914DE00764AB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A6ABD92A5914DE00764AB5 /* Main.storyboard */; };
 		A4A6ABDD2A5914DF00764AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A6ABDC2A5914DF00764AB5 /* Assets.xcassets */; };
 		A4A6ABE02A5914DF00764AB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A6ABDE2A5914DF00764AB5 /* LaunchScreen.storyboard */; };
 		A4A6ABEB2A5914DF00764AB5 /* WAiSTETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A6ABEA2A5914DF00764AB5 /* WAiSTETests.swift */; };
 		A4A6ABF52A5914DF00764AB5 /* WAiSTEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A6ABF42A5914DF00764AB5 /* WAiSTEUITests.swift */; };
 		A4A6ABF72A5914DF00764AB5 /* WAiSTEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A6ABF62A5914DF00764AB5 /* WAiSTEUITestsLaunchTests.swift */; };
+		A4A6AC042A5A327400764AB5 /* TrashSortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A6AC032A5A327400764AB5 /* TrashSortViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A427B2F72A5A574100B75BBC /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		A427B2F92A5A5F1200B75BBC /* IdentifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifierViewController.swift; sourceTree = "<group>"; };
 		A4A6ABD02A5914DE00764AB5 /* WAiSTE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WAiSTE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A6ABD32A5914DE00764AB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4A6ABD52A5914DE00764AB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A4A6ABD72A5914DE00764AB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4A6ABDA2A5914DE00764AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4A6ABDC2A5914DF00764AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4A6ABDF2A5914DF00764AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		A4A6ABF02A5914DF00764AB5 /* WAiSTEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WAiSTEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A6ABF42A5914DF00764AB5 /* WAiSTEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAiSTEUITests.swift; sourceTree = "<group>"; };
 		A4A6ABF62A5914DF00764AB5 /* WAiSTEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAiSTEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4A6AC032A5A327400764AB5 /* TrashSortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashSortViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				A4A6ABD32A5914DE00764AB5 /* AppDelegate.swift */,
 				A4A6ABD52A5914DE00764AB5 /* SceneDelegate.swift */,
-				A4A6ABD72A5914DE00764AB5 /* ViewController.swift */,
+				A4A6AC032A5A327400764AB5 /* TrashSortViewController.swift */,
+				A427B2F92A5A5F1200B75BBC /* IdentifierViewController.swift */,
+				A427B2F72A5A574100B75BBC /* LiveViewController.swift */,
 				A4A6ABD92A5914DE00764AB5 /* Main.storyboard */,
 				A4A6ABDC2A5914DF00764AB5 /* Assets.xcassets */,
 				A4A6ABDE2A5914DF00764AB5 /* LaunchScreen.storyboard */,
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4A6ABD82A5914DE00764AB5 /* ViewController.swift in Sources */,
 				A4A6ABD42A5914DE00764AB5 /* AppDelegate.swift in Sources */,
+				A427B2FA2A5A5F1200B75BBC /* IdentifierViewController.swift in Sources */,
+				A4A6AC042A5A327400764AB5 /* TrashSortViewController.swift in Sources */,
+				A427B2F82A5A574100B75BBC /* LiveViewController.swift in Sources */,
 				A4A6ABD62A5914DE00764AB5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,20 +445,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R8J683G97T;
+				DEVELOPMENT_TEAM = NPH2M474Q3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WAiSTE/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app wants to use your Camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app wants to use your photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = waiste.WAiSTE;
+				PRODUCT_BUNDLE_IDENTIFIER = waabey.WAiSTE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -465,20 +476,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R8J683G97T;
+				DEVELOPMENT_TEAM = NPH2M474Q3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WAiSTE/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app wants to use your Camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app wants to use your photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = waiste.WAiSTE;
+				PRODUCT_BUNDLE_IDENTIFIER = waabey.WAiSTE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
