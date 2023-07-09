@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		A427B2F82A5A574100B75BBC /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427B2F72A5A574100B75BBC /* LiveViewController.swift */; };
 		A427B2FA2A5A5F1200B75BBC /* IdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427B2F92A5A5F1200B75BBC /* IdentifierViewController.swift */; };
+		A427B2FC2A5A660600B75BBC /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427B2FB2A5A660600B75BBC /* Classifier.swift */; };
+		A427B2FE2A5A69F600B75BBC /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A427B2FD2A5A69F600B75BBC /* MobileNetV2.mlmodel */; };
+		A427B3012A5A75BD00B75BBC /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = A427B3002A5A75BD00B75BBC /* OpenAI */; };
+		A427B3042A5A75F200B75BBC /* CompletionsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427B3032A5A75F200B75BBC /* CompletionsQuery.swift */; };
+		A427B3062A5A762300B75BBC /* CompletionsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427B3052A5A762300B75BBC /* CompletionsResult.swift */; };
+		A427B3092A5A7A6300B75BBC /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = A427B3082A5A7A6300B75BBC /* Starscream */; };
 		A4A6ABD42A5914DE00764AB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A6ABD32A5914DE00764AB5 /* AppDelegate.swift */; };
 		A4A6ABD62A5914DE00764AB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A6ABD52A5914DE00764AB5 /* SceneDelegate.swift */; };
 		A4A6ABDB2A5914DE00764AB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A6ABD92A5914DE00764AB5 /* Main.storyboard */; };
@@ -40,6 +46,10 @@
 /* Begin PBXFileReference section */
 		A427B2F72A5A574100B75BBC /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		A427B2F92A5A5F1200B75BBC /* IdentifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifierViewController.swift; sourceTree = "<group>"; };
+		A427B2FB2A5A660600B75BBC /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		A427B2FD2A5A69F600B75BBC /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		A427B3032A5A75F200B75BBC /* CompletionsQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionsQuery.swift; sourceTree = "<group>"; };
+		A427B3052A5A762300B75BBC /* CompletionsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionsResult.swift; sourceTree = "<group>"; };
 		A4A6ABD02A5914DE00764AB5 /* WAiSTE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WAiSTE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A6ABD32A5914DE00764AB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4A6ABD52A5914DE00764AB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A427B3012A5A75BD00B75BBC /* OpenAI in Frameworks */,
+				A427B3092A5A7A6300B75BBC /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A427B3022A5A75D400B75BBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A427B3032A5A75F200B75BBC /* CompletionsQuery.swift */,
+				A427B3052A5A762300B75BBC /* CompletionsResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A4A6ABC72A5914DE00764AB5 = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +124,15 @@
 		A4A6ABD22A5914DE00764AB5 /* WAiSTE */ = {
 			isa = PBXGroup;
 			children = (
+				A427B3022A5A75D400B75BBC /* Models */,
 				A4A6ABD32A5914DE00764AB5 /* AppDelegate.swift */,
 				A4A6ABD52A5914DE00764AB5 /* SceneDelegate.swift */,
 				A4A6AC032A5A327400764AB5 /* TrashSortViewController.swift */,
 				A427B2F92A5A5F1200B75BBC /* IdentifierViewController.swift */,
 				A427B2F72A5A574100B75BBC /* LiveViewController.swift */,
+				A427B2FB2A5A660600B75BBC /* Classifier.swift */,
 				A4A6ABD92A5914DE00764AB5 /* Main.storyboard */,
+				A427B2FD2A5A69F600B75BBC /* MobileNetV2.mlmodel */,
 				A4A6ABDC2A5914DF00764AB5 /* Assets.xcassets */,
 				A4A6ABDE2A5914DF00764AB5 /* LaunchScreen.storyboard */,
 				A4A6ABE12A5914DF00764AB5 /* Info.plist */,
@@ -149,6 +173,10 @@
 			dependencies = (
 			);
 			name = WAiSTE;
+			packageProductDependencies = (
+				A427B3002A5A75BD00B75BBC /* OpenAI */,
+				A427B3082A5A7A6300B75BBC /* Starscream */,
+			);
 			productName = WAiSTE;
 			productReference = A4A6ABD02A5914DE00764AB5 /* WAiSTE.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +249,10 @@
 				Base,
 			);
 			mainGroup = A4A6ABC72A5914DE00764AB5;
+			packageReferences = (
+				A427B2FF2A5A75BD00B75BBC /* XCRemoteSwiftPackageReference "OpenAI" */,
+				A427B3072A5A7A6300B75BBC /* XCRemoteSwiftPackageReference "Starscream" */,
+			);
 			productRefGroup = A4A6ABD12A5914DE00764AB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,10 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A427B2FE2A5A69F600B75BBC /* MobileNetV2.mlmodel in Sources */,
 				A4A6ABD42A5914DE00764AB5 /* AppDelegate.swift in Sources */,
 				A427B2FA2A5A5F1200B75BBC /* IdentifierViewController.swift in Sources */,
 				A4A6AC042A5A327400764AB5 /* TrashSortViewController.swift in Sources */,
+				A427B3042A5A75F200B75BBC /* CompletionsQuery.swift in Sources */,
 				A427B2F82A5A574100B75BBC /* LiveViewController.swift in Sources */,
+				A427B2FC2A5A660600B75BBC /* Classifier.swift in Sources */,
+				A427B3062A5A762300B75BBC /* CompletionsResult.swift in Sources */,
 				A4A6ABD62A5914DE00764AB5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,6 +652,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A427B2FF2A5A75BD00B75BBC /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+		A427B3072A5A7A6300B75BBC /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A427B3002A5A75BD00B75BBC /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A427B2FF2A5A75BD00B75BBC /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+		A427B3082A5A7A6300B75BBC /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A427B3072A5A7A6300B75BBC /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4A6ABC82A5914DE00764AB5 /* Project object */;
 }
