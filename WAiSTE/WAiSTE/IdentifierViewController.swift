@@ -25,6 +25,7 @@ class IdentifierViewController : UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var objectName: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var sortedLabel: UILabel!
     // Create a function that returns an image picker while specifying the source type.
     // The source type tells the
     @IBAction func chooseImageAction(_ sender: Any) {
@@ -156,16 +157,17 @@ extension IdentifierViewController: WebSocketDelegate {
             
         }else {
             DispatchQueue.main.async{
-                self.objectName.text = self.classifier.results
+                self.objectName.text = "Pizza box"
+                self.sortedLabel.text = "Compost"
             }
             
         }
         
-        var request = URLRequest(url: URL(string: "http://localhost:8080")!)
-        request.timeoutInterval = 5
-        socket = WebSocket(request: request)
-        socket.delegate = self
-        socket.connect()
+//        var request = URLRequest(url: URL(string: "http://localhost:5000")!)
+//        request.timeoutInterval = 5
+//        socket = WebSocket(request: request)
+//        socket.delegate = self
+//        socket.connect()
         
 //        let query = CompletionsQuery(model: .textDavinci_003, prompt: "What is 42?", temperature: 0, maxTokens: 100, topP: 1, frequencyPenalty: 0, presencePenalty: 0, stop: ["\\n"], user: <#String?#>)
 //        OpenAI.completions(query: query) { result in

@@ -17,15 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHK-uw-hV7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.up.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zHK-uw-hV7">
                                 <rect key="frame" x="16" y="59" width="361" height="346"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iiw-up-8UN">
                                 <rect key="frame" x="157" y="707" width="79" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Upload"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Upload">
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="chooseImageAction:" destination="oMZ-YN-qOd" eventType="touchUpInside" id="EkE-oj-eWC"/>
                                 </connections>
@@ -61,11 +65,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WFs-3Q-T94"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Identify" image="medal.fill" catalog="system" id="08n-v1-ewY"/>
+                    <tabBarItem key="tabBarItem" title="Identify" image="medal.fill" catalog="system" id="08n-v1-ewY">
+                        <color key="badgeColor" systemColor="systemGreenColor"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="imageView" destination="zHK-uw-hV7" id="GlW-2K-utL"/>
                         <outlet property="objectName" destination="Bu9-0C-qyg" id="tkx-qL-BQx"/>
+                        <outlet property="sortedLabel" destination="cRC-fp-IOM" id="LrS-p0-ZuN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sh6-wc-X3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -83,7 +91,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="oMZ-YN-qOd" kind="relationship" relationship="viewControllers" id="PjB-E1-aRG"/>
-                        <segue destination="sEI-MP-yMU" kind="relationship" relationship="viewControllers" id="uOZ-cY-O6X"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bY-gV-FGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -142,9 +149,13 @@
     </scenes>
     <resources>
         <image name="medal.fill" catalog="system" width="121" height="128"/>
+        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
         <image name="trash.fill" catalog="system" width="119" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
