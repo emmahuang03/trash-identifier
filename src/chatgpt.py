@@ -33,7 +33,8 @@ def categorizeObjectOpenai():
     )
 
     answer = response['choices'][0]['message']['content']
-    return answer
+
+    return [answer, user_input]
 
 def categorizeObject():
     return categorizeObjectOpenai()
